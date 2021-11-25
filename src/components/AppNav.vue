@@ -2,12 +2,11 @@
   <header class="header">
     <h1 class="header_logo-wrap">
       <router-link to="/" v-if="!loggedIn">
-        <font-awesome-icon class="header_logo" icon="bolt" />
-        JMTGram
+        <img src="../assets/MustEat.png" width="100px" padding-left="50px" />왕십리 맛집 저장소  
       </router-link>
       <router-link to="/jmtzall" v-else
-        ><font-awesome-icon class="header_logo" icon="bolt" />
-        JMTGram</router-link
+        >
+        <img src="../assets/MustEat.png" width="100px" padding-left="50px" /> 왕십리 맛집 저장소</router-link
       >
     </h1>
     <nav class="nav">
@@ -59,10 +58,10 @@ export default {
   padding: 0 2rem;
   // background: linear-gradient(to right, #d2527f, #d91e18);
   // background-color: #f3664e;
-  border-bottom: 1px solid #0ed3d9;
+  border-bottom: 1px solid #c83228;
   &_logo-wrap {
     > a {
-      color: #0ed3d9;
+      color: #c83228;
       border: none;
       display: inline-flex;
       flex-direction: row;
@@ -70,22 +69,22 @@ export default {
     }
 
     > a:hover {
-      color: #0ed3d9;
+      color: black;
       border: none;
     }
 
     > a:hover > .header_logo {
-      color: #0ed3d9;
+      color: #c83228;
     }
 
-    color: #0ed3d9;
+    color: #c83228;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
   }
   &_logo {
     margin-right: 10px;
-    color: #0ed3d9;
+    color: #c83228;
     font-size: 2rem;
     transition: all 1s;
   }
@@ -113,19 +112,19 @@ a {
   transition: all 1s;
 
   &:hover {
-    color: #0ed3d9;
-    border-bottom: 2px solid #0ed3d9;
+    color: #c83228;
+    border-bottom: 2px solid #a22920;
   }
 
   &:active {
-    color: #0ed3d9;
-    border-bottom: 2px solid #0ed3d9;
+    color: #c83228;
+    border-bottom: 2px solid #a22920;
   }
 }
 
 .router-link-exact-active {
-  color: #0ed3d9;
-  border-bottom: 2px solid #0ed3d9;
+  color: #c83228;
+  border-bottom: 2px solid #c83228;
 }
 
 .logoutButton {

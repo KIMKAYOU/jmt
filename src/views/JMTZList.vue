@@ -1,13 +1,13 @@
 <template>
   <div class="list">
-    <h1 class="list_title">존맛탱집 리스트</h1>
+    <h1 class="list_title">저장 맛집 목록</h1> 
     <ChartDonut
       v-if="checkgetJMTZs"
       :chartData="dataChart"
       :options="optionChart"
       :styles="chartStyle"
     />
-    <table class="table">
+    <table class="table" > 
       <colgroup>
         <col style="width: 7%" />
         <col style="width:" />
@@ -26,7 +26,7 @@
           <th class="table_title">메뉴</th>
           <th class="table_title">가격</th>
           <th class="table_title">위치</th>
-          <th class="table_title">메모</th>
+          <th class="table_title">비고</th>
           <th class="table_title">추천/비추천</th>
           <th class="table_title">공개/비공개</th>
           <th class="table_title">삭제</th>
@@ -71,7 +71,7 @@ export default {
     return {
       chartStyle: {
         height: '240px',
-        margin: '2rem 0',
+        margin: '2rem 0',    // 막대그래프 margin
         position: 'relative'
       },
       getJMTZsData: this.getJMTZs
@@ -109,12 +109,13 @@ export default {
           {
             data: dataNumbers,
             backgroundColor: [
-              'rgba(255, 99, 132, 1)',
-              'rgba(54, 162, 235, 1)',
-              'rgba(255, 206, 86, 1)',
-              'rgba(75, 192, 192, 1)',
-              'rgba(153, 102, 255, 1)',
-              'rgba(255, 159, 64, 1)'
+              'rgba(255, 0, 0, 1)',
+              'rgba(248, 129, 37, 1)', //orange
+              'rgba(255, 225, 31, 1)', //yellow
+              'rgba(0, 255, 0, 1)',
+              'rgba(0, 0, 255, 1)',
+              'rgba(161, 162, 154, 1)' // grey
+           
             ]
           }
         ]
@@ -126,7 +127,7 @@ export default {
       return {
         title: {
           display: true,
-          text: '좋아하는 음식 종류 통계'
+          text: '왕십리 업종 분포'
         },
         responsive: true,
         maintainAspectRatio: false,

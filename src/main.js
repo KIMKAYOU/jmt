@@ -2,7 +2,8 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './vuex/store'
-import firebase from 'firebase'
+import * as firebase from 'firebase/app'
+import 'firebase/compat/auth'
 import 'nprogress/nprogress.css'
 import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
@@ -12,7 +13,7 @@ import { faCoffee, faBolt } from '@fortawesome/free-solid-svg-icons'
 import {
   faFacebook,
   faTwitter,
-  faInstagram
+  faInstagram,
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import moment from 'moment'
@@ -38,7 +39,7 @@ var firebaseConfig = {
   projectId: 'jmt-vue-firebase',
   storageBucket: 'jmt-vue-firebase.appspot.com',
   messagingSenderId: '455230855717',
-  appId: '1:455230855717:web:86ec32e2ad834086'
+  appId: '1:455230855717:web:86ec32e2ad834086',
 }
 firebase.initializeApp(firebaseConfig)
 
@@ -48,7 +49,7 @@ const requireComponent = require.context(
   /Base[A-Z]\w+\.(vue|js)$/
 )
 
-requireComponent.keys().forEach(fileName => {
+requireComponent.keys().forEach((fileName) => {
   const componentConfig = requireComponent(fileName)
 
   const componentName = upperFirst(
@@ -63,3 +64,4 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount('#app')
+

@@ -1,5 +1,10 @@
-import firebase from 'firebase'
+import * as firebase from 'firebase/compat/app'
+import 'firebase/compat/auth'
 import 'firebase/storage'
+// import 'firebase/compat/firestore';
+
+// const auth = firebase.auth();
+// const database = firebase.database();
 
 export default {
   createUser(email, password) {
@@ -78,3 +83,4 @@ export default {
       .update(payload[key])
   }
 }
+

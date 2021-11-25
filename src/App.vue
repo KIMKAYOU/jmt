@@ -5,17 +5,17 @@
     <div class="main">
       <router-view class="container" />
     </div>
-    <div class="fixed">
+    <!-- <div class="fixed">
       <ul class="fixed_list">
-        <!-- <li class="fixed_item">JMTgram</li> -->
+        <li class="fixed_item">JMTgram</li>
         <li class="fixed_item fixed_item-sns">
           <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'twitter' }" />
           <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'facebook' }" />
           <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'instagram' }" />
         </li>
         <li class="fixed_item">© 2019 JMTgram</li>
-      </ul>
-    </div>
+      </ul>  
+    </div> 워터마크 삭제 -->   
   </div>
 </template>
 

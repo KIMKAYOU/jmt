@@ -12,6 +12,7 @@ body {
   padding: 0;
   // max-width: 90rem;
   width: 100%;
+  
 }
 
 html,
@@ -34,23 +35,23 @@ button {
   padding: 1rem;
   font-size: 1.4rem;
   color: #ffffff;
-  background-color: #0ed3d9;
+  background-color: #999999;   
   border: none;
   border-radius: 0.4rem;
-  box-shadow: 0 0.4rem 0 0 #00b2b7;
+  box-shadow: 0 0.4rem 0 0 #666666;
   min-width: 12rem;
   margin-top: 2rem;
   transition: all 1s;
 
   &:hover {
-    background-color: #04cfd6;
-    box-shadow: 0 0.4rem 0 0 #008287;
+    background-color: #585b5f;
+    box-shadow: 0 0.4rem 0 0 #222222;
     transform: translateY(-2px);
   }
 
   &:active {
-    background-color: #04cfd6;
-    box-shadow: 0 0.4rem 0 0 #008287;
+    background-color: #58626e;
+    box-shadow: 0 0.4rem 0 0 #2c3e50;
   }
 
   &:disabled,
@@ -100,7 +101,7 @@ button {
     font-size: 2rem;
     padding-bottom: 20px;
     margin-bottom: 20px;
-    border-bottom: 1px solid #0ed3d9;
+    border-bottom: 2px solid #c83228;
   }
 }
 
@@ -199,7 +200,7 @@ button {
   &_btn {
     // text-decoration: none;
     font-weight: bold;
-    color: #0ed3d9;
+    color: #c83228;
   }
 }
 
@@ -215,8 +216,8 @@ button {
   &_item {
     margin: 4px 0;
     list-style: none;
-    font-sinze: 1.2rem;
-    color: #57cdd1;
+    font-size: 1.2rem;
+    color: #c83228;
 
     &-sns {
       font-size: 20px;

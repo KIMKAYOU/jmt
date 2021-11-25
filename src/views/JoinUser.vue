@@ -34,7 +34,7 @@
 
     <template v-if="$v.password.$error">
       <p v-if="!$v.password.minLength" class="message_err">
-        비밀번호는 최소 6자 이상입니다
+        비밀번호는 최소 5자 이상입니다
       </p>
       <p v-if="!$v.password.required" class="message_err">
         비밀번호는 필수 입력 사항입니다
@@ -70,7 +70,7 @@ export default {
     },
     password: {
       required,
-      minLength: minLength(6)
+      minLength: minLength(5)
     }
   },
   methods: {

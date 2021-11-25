@@ -66,15 +66,15 @@ export default {
   &_title {
     padding: 2rem 1.5rem;
     text-align: center;
-    background-color: #6d7ae0;
-    color: #fff;
-    font-weight: normal;
+    background-color: #585b5f;   // 기존 바 색상 #6d7ae0
+    color: #fff;   // 글씨 색상
+    font-weight: bold; // 폰트 진하게  기존 글씨 normal
   }
 
   &_desc {
     padding: 1rem 1.5rem;
     text-align: center;
-    color: #999999;
+    color: #999999;  //맛집 리스트 표 색상
   }
 }
 </style>
